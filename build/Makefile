@@ -150,6 +150,60 @@ src/Engine.cpp.s:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Engine.cpp.s
 .PHONY : src/Engine.cpp.s
 
+src/Player.o: src/Player.cpp.o
+
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/Scene/GameInstance.o: src/Scene/GameInstance.cpp.o
+
+.PHONY : src/Scene/GameInstance.o
+
+# target to build an object file
+src/Scene/GameInstance.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o
+.PHONY : src/Scene/GameInstance.cpp.o
+
+src/Scene/GameInstance.i: src/Scene/GameInstance.cpp.i
+
+.PHONY : src/Scene/GameInstance.i
+
+# target to preprocess a source file
+src/Scene/GameInstance.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.i
+.PHONY : src/Scene/GameInstance.cpp.i
+
+src/Scene/GameInstance.s: src/Scene/GameInstance.cpp.s
+
+.PHONY : src/Scene/GameInstance.s
+
+# target to generate assembly for a file
+src/Scene/GameInstance.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.s
+.PHONY : src/Scene/GameInstance.cpp.s
+
 src/Scene/MainMenu.o: src/Scene/MainMenu.cpp.o
 
 .PHONY : src/Scene/MainMenu.o
@@ -203,6 +257,33 @@ src/Scene/OptionsMenu.s: src/Scene/OptionsMenu.cpp.s
 src/Scene/OptionsMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.s
 .PHONY : src/Scene/OptionsMenu.cpp.s
+
+src/Scene/PauseMenu.o: src/Scene/PauseMenu.cpp.o
+
+.PHONY : src/Scene/PauseMenu.o
+
+# target to build an object file
+src/Scene/PauseMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o
+.PHONY : src/Scene/PauseMenu.cpp.o
+
+src/Scene/PauseMenu.i: src/Scene/PauseMenu.cpp.i
+
+.PHONY : src/Scene/PauseMenu.i
+
+# target to preprocess a source file
+src/Scene/PauseMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.i
+.PHONY : src/Scene/PauseMenu.cpp.i
+
+src/Scene/PauseMenu.s: src/Scene/PauseMenu.cpp.s
+
+.PHONY : src/Scene/PauseMenu.s
+
+# target to generate assembly for a file
+src/Scene/PauseMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.s
+.PHONY : src/Scene/PauseMenu.cpp.s
 
 src/Scene/Scene.o: src/Scene/Scene.cpp.o
 
@@ -297,12 +378,21 @@ help:
 	@echo "... src/Engine.o"
 	@echo "... src/Engine.i"
 	@echo "... src/Engine.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/Scene/GameInstance.o"
+	@echo "... src/Scene/GameInstance.i"
+	@echo "... src/Scene/GameInstance.s"
 	@echo "... src/Scene/MainMenu.o"
 	@echo "... src/Scene/MainMenu.i"
 	@echo "... src/Scene/MainMenu.s"
 	@echo "... src/Scene/OptionsMenu.o"
 	@echo "... src/Scene/OptionsMenu.i"
 	@echo "... src/Scene/OptionsMenu.s"
+	@echo "... src/Scene/PauseMenu.o"
+	@echo "... src/Scene/PauseMenu.i"
+	@echo "... src/Scene/PauseMenu.s"
 	@echo "... src/Scene/Scene.o"
 	@echo "... src/Scene/Scene.i"
 	@echo "... src/Scene/Scene.s"

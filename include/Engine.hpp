@@ -6,6 +6,8 @@
 
 #include "Scene/MainMenu.hpp"
 #include "Scene/OptionsMenu.hpp"
+#include "Scene/GameInstance.hpp"
+#include "Scene/PauseMenu.hpp"
 
 #include <iostream>
 

@@ -5,8 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/cpp-workspace/RKS/src/Engine.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Engine.cpp.o"
+  "/home/jack/cpp-workspace/RKS/src/Player.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Player.cpp.o"
+  "/home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o"
   "/home/jack/cpp-workspace/RKS/src/Scene/MainMenu.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o"
   "/home/jack/cpp-workspace/RKS/src/Scene/OptionsMenu.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o"
+  "/home/jack/cpp-workspace/RKS/src/Scene/PauseMenu.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o"
   "/home/jack/cpp-workspace/RKS/src/Scene/Scene.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o"
   "/home/jack/cpp-workspace/RKS/src/external/ResourceManager.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.o"
   "/home/jack/cpp-workspace/RKS/src/main.cpp" "/home/jack/cpp-workspace/RKS/build/CMakeFiles/RKS.dir/src/main.cpp.o"

@@ -1,6 +1,8 @@
 #include "Scene/Scene.hpp"
 
 const sf::Color Scene::DEFAULT_BACKGROUND_COLOR = sf::Color(50, 50, 50, 255);
+const sf::Color Scene::DEFAULT_TEXT_COLOR = sf::Color(10, 10, 10);
+const sf::Color Scene::HIGHLIGHT_TEXT_COLOR = sf::Color(200, 200, 200);
 
 Scene::Scene() {
 

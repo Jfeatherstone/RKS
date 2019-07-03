@@ -53,7 +53,7 @@ void Engine::initializeScenes() {
     // Note that the order initialized or added here doesn't actually matter
     // though. std::maps are ordered by comparators (<) and so each SceneType
     // is assigned an integer value, which reflect that same order as below:
-    // Options = 0, ..., GameInstance = 5
+    // Options = 0, ..., GameInstance = 4
 
     // Initialize the options menu
     m_scenes[SceneType::OptionsMenu] = new OptionsMenu();
@@ -61,7 +61,9 @@ void Engine::initializeScenes() {
     m_scenesActive[SceneType::OptionsMenu] = false; // Disable options menu
 
     // Initialize the pause menu
-
+    m_scenes[SceneType::PauseMenu] = new PauseMenu();
+    m_scenes[SceneType::PauseMenu]->init(m_windowSize);
+    m_scenesActive[SceneType::PauseMenu] = false; // Disable pause menu
 
     // Initialize the card collection
 
@@ -75,7 +77,9 @@ void Engine::initializeScenes() {
     m_scenesActive[SceneType::MainMenu] = true; // Enable the main menu
 
     // Initialize the game instance
-
+    m_scenes[SceneType::GameInstance] = new GameInstance();
+    m_scenes[SceneType::GameInstance]->init(m_windowSize);
+    m_scenesActive[SceneType::GameInstance] = false; // Disable game instance
 
 }
 

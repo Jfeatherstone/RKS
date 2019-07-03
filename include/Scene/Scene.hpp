@@ -14,15 +14,17 @@ enum class SceneType: int {
     OptionsMenu = 0,
     PauseMenu = 1,
     CardCollection = 2,
-    GameSelect = 3,
-    MainMenu = 4,
-    GameInstance = 5,
+    MainMenu = 3,
+    GameInstance = 4,
 };
 
 
 class Scene: public sf::Drawable {
 
 protected:
+
+    const static sf::Color DEFAULT_TEXT_COLOR;
+    const static sf::Color HIGHLIGHT_TEXT_COLOR;
 
     /**
      * @brief The default background color is black

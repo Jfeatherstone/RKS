@@ -7,9 +7,6 @@ class MainMenu: public Scene {
 
 private:
 
-    const static sf::Color DEFAULT_TEXT_COLOR;
-    const static sf::Color HIGHLIGHT_TEXT_COLOR;
-
     /**
      * @brief The text displaying the title
      */

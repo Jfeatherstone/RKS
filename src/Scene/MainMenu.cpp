@@ -1,8 +1,5 @@
 #include "Scene/MainMenu.hpp"
 
-const sf::Color MainMenu::DEFAULT_TEXT_COLOR = sf::Color(10, 10, 10);
-const sf::Color MainMenu::HIGHLIGHT_TEXT_COLOR = sf::Color(200, 200, 200);
-
 
 void MainMenu::init(sf::Vector2f windowSize) {
 
@@ -87,7 +84,9 @@ std::set<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime)
 
             // The play game option
             if (m_playGameText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
-                
+                // Get rid of the main menu and add the game instance
+                scenes.insert(SceneType::MainMenu);
+                scenes.insert(SceneType::GameInstance);
             }
 
             // The options option

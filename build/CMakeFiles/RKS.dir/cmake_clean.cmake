@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RKS.dir/src/Engine.cpp.o"
+  "CMakeFiles/RKS.dir/src/Player.cpp.o"
+  "CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o"
+  "CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o"
   "CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.o"
   "CMakeFiles/RKS.dir/src/main.cpp.o"
