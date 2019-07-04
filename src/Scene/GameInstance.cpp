@@ -8,6 +8,12 @@ void GameInstance::init(sf::Vector2f windowSize) {
     setBackgroundTransparency(.70f);
     m_background.setSize(m_windowSize);
 
+    /***************************
+     *     HUD VIEW INIT
+     **************************/
+    
+
+
 }
 
 std::set<SceneType> GameInstance::input(sf::RenderWindow& window, float elapsedTime) {
@@ -38,5 +44,11 @@ void GameInstance::update(sf::RenderWindow& window, float elapsedTime) {
 void GameInstance::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
     target.draw(m_background);
+
+    /***************************
+     *         HUD VIEW
+     **************************/
+    target.setView(m_HUDView);
+
 
 }

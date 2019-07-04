@@ -26,6 +26,11 @@ private:
      */
     sf::View m_HUDView;
 
+    /******************
+     *      HUD VIEW
+     *****************/
+    sf::Sprite m_healthBar;
+
 public:
 
     // The virtual methods from Scene
