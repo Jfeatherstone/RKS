@@ -58,5 +58,7 @@ public:
     // This is where all player specific things will be setup, like health
     void init();
 
-    void update(float elapsedTime);
+    //void update(float elapsedTime);
+
+    float getSpeed();
 };

@@ -13,9 +13,10 @@ void GameInstance::init(sf::Vector2f windowSize) {
      **************************/
     RectangleShape r;
     r.setSize(Vector2f(50, 50));
-    m_player = Player(r);
+    m_player = Player(r); // Temporarily we will use a rectangle as the player sprite
     m_player.setOrigin(m_player.getCentroid());
     m_player.setPosition(m_windowSize * .5f);
+    m_player.init();
 
     /***************************
      *     HUD VIEW INIT
@@ -33,21 +34,55 @@ void GameInstance::init(sf::Vector2f windowSize) {
 
 }
 
-std::set<SceneType> GameInstance::input(sf::RenderWindow& window, float elapsedTime) {
+set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
     
-    std::set<SceneType> scenes;
+    set<SceneType> scenes;
 
-    sf::Event event;
+    Event event;
     
     while (window.pollEvent(event)) {
 
         if (event.type == sf::Event::KeyPressed) {
 
-            if (event.key.code == sf::Keyboard::Escape)
+            if (event.key.code == Keyboard::Escape)
                 // Enter the pause menu
                 scenes.insert(SceneType::PauseMenu);
 
+            if (event.key.code == Keyboard::W) {
+                m_player.setVelocity(m_player.getVelocity() + Vector2f(0, -m_player.getSpeed()));
+            }
+            if (event.key.code == Keyboard::S) {
+                m_player.setVelocity(m_player.getVelocity() + Vector2f(0, m_player.getSpeed()));
+            }
+            if (event.key.code == Keyboard::A) {
+                m_player.setVelocity(m_player.getVelocity() + Vector2f(-m_player.getSpeed(), 0));
+            }
+            if (event.key.code == Keyboard::D) {
+                m_player.setVelocity(m_player.getVelocity() + Vector2f(m_player.getSpeed(), 0));
+            }
+
         }
+
+        if (event.type == Event::KeyReleased) {
+
+            if (event.key.code == Keyboard::W) {
+                m_player.setVelocity(m_player.getVelocity() - Vector2f(0, -m_player.getSpeed()));
+            }
+            if (event.key.code == Keyboard::S) {
+                m_player.setVelocity(m_player.getVelocity() - Vector2f(0, m_player.getSpeed()));
+            }
+            if (event.key.code == Keyboard::A) {
+                m_player.setVelocity(m_player.getVelocity() - Vector2f(-m_player.getSpeed(), 0));
+            }
+            if (event.key.code == Keyboard::D) {
+                m_player.setVelocity(m_player.getVelocity() - Vector2f(m_player.getSpeed(), 0));
+            }
+
+        }
+
+    }
+
+    if (Keyboard::isKeyPressed(Keyboard::W)) {
 
     }
 
@@ -55,6 +90,8 @@ std::set<SceneType> GameInstance::input(sf::RenderWindow& window, float elapsedT
 }
 
 void GameInstance::update(sf::RenderWindow& window, float elapsedTime) {
+
+    m_player.update(elapsedTime);
 
 }
 

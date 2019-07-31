@@ -35,6 +35,9 @@ void Engine::initializeWindow(sf::Vector2f windowSize) {
     // Cap the framerate at 60 fps
     m_window.setFramerateLimit(60);
 
+    // Makes reading inputs easier
+    m_window.setKeyRepeatEnabled(false);
+
 }
 
 void Engine::initializeAssets() {

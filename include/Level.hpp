@@ -49,6 +49,8 @@ public:
 
     void setSize(LevelSize levelSize, Vector2f windowSize);
 
+    void updateLevel(Vector2f moveDistance, float rotationAngle, Vector2f playerPosition)
+
     /**
      * @brief Overriden from sf::Drawable. Will draw all of the background tiles
      * 

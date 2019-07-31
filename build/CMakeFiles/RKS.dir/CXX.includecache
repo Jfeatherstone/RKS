@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Engine.hpp
-SFML/Graphics.hpp
--
-external/ResourceManager/ResourceManager.hpp
-../include/external/ResourceManager/ResourceManager.hpp
-Scene/MainMenu.hpp
-../include/Scene/MainMenu.hpp
-Scene/OptionsMenu.hpp
-../include/Scene/OptionsMenu.hpp
-Scene/GameInstance.hpp
-../include/Scene/GameInstance.hpp
-Scene/PauseMenu.hpp
-../include/Scene/PauseMenu.hpp
-iostream
--
-
 ../include/Level.hpp
 SFML/Graphics.hpp
 -
@@ -45,22 +29,6 @@ Player.hpp
 ../include/Scene/Player.hpp
 Level.hpp
 ../include/Scene/Level.hpp
-
-../include/Scene/MainMenu.hpp
-Scene/Scene.hpp
-../include/Scene/Scene/Scene.hpp
-Engine.hpp
-../include/Scene/Engine.hpp
-
-../include/Scene/OptionsMenu.hpp
-Scene.hpp
-../include/Scene/Scene.hpp
-
-../include/Scene/PauseMenu.hpp
-SFML/Graphics.hpp
--
-Scene/Scene.hpp
-../include/Scene/Scene/Scene.hpp
 
 ../include/Scene/Scene.hpp
 SFML/Graphics.hpp
@@ -106,23 +74,7 @@ SFML/Graphics.hpp
 tgmath.h
 -
 
-/home/jack/cpp-workspace/RKS/src/Engine.cpp
-Engine.hpp
-/home/jack/cpp-workspace/RKS/src/Engine.hpp
-
-/home/jack/cpp-workspace/RKS/src/Player.cpp
-Player.hpp
-/home/jack/cpp-workspace/RKS/src/Player.hpp
-
 /home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp
 Scene/GameInstance.hpp
 /home/jack/cpp-workspace/RKS/src/Scene/Scene/GameInstance.hpp
-
-/home/jack/cpp-workspace/RKS/src/Scene/MainMenu.cpp
-Scene/MainMenu.hpp
-/home/jack/cpp-workspace/RKS/src/Scene/Scene/MainMenu.hpp
-
-/home/jack/cpp-workspace/RKS/src/main.cpp
-Engine.hpp
-/home/jack/cpp-workspace/RKS/src/Engine.hpp
 
