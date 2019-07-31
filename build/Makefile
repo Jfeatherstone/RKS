@@ -150,6 +150,33 @@ src/Engine.cpp.s:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Engine.cpp.s
 .PHONY : src/Engine.cpp.s
 
+src/Level.o: src/Level.cpp.o
+
+.PHONY : src/Level.o
+
+# target to build an object file
+src/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Level.cpp.o
+.PHONY : src/Level.cpp.o
+
+src/Level.i: src/Level.cpp.i
+
+.PHONY : src/Level.i
+
+# target to preprocess a source file
+src/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Level.cpp.i
+.PHONY : src/Level.cpp.i
+
+src/Level.s: src/Level.cpp.s
+
+.PHONY : src/Level.s
+
+# target to generate assembly for a file
+src/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Level.cpp.s
+.PHONY : src/Level.cpp.s
+
 src/Player.o: src/Player.cpp.o
 
 .PHONY : src/Player.o
@@ -312,32 +339,140 @@ src/Scene/Scene.cpp.s:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Scene/Scene.cpp.s
 .PHONY : src/Scene/Scene.cpp.s
 
-src/external/ResourceManager.o: src/external/ResourceManager.cpp.o
+src/external/ResourceManager/ResourceManager.o: src/external/ResourceManager/ResourceManager.cpp.o
 
-.PHONY : src/external/ResourceManager.o
+.PHONY : src/external/ResourceManager/ResourceManager.o
 
 # target to build an object file
-src/external/ResourceManager.cpp.o:
-	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.o
-.PHONY : src/external/ResourceManager.cpp.o
+src/external/ResourceManager/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o
+.PHONY : src/external/ResourceManager/ResourceManager.cpp.o
 
-src/external/ResourceManager.i: src/external/ResourceManager.cpp.i
+src/external/ResourceManager/ResourceManager.i: src/external/ResourceManager/ResourceManager.cpp.i
 
-.PHONY : src/external/ResourceManager.i
+.PHONY : src/external/ResourceManager/ResourceManager.i
 
 # target to preprocess a source file
-src/external/ResourceManager.cpp.i:
-	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.i
-.PHONY : src/external/ResourceManager.cpp.i
+src/external/ResourceManager/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.i
+.PHONY : src/external/ResourceManager/ResourceManager.cpp.i
 
-src/external/ResourceManager.s: src/external/ResourceManager.cpp.s
+src/external/ResourceManager/ResourceManager.s: src/external/ResourceManager/ResourceManager.cpp.s
 
-.PHONY : src/external/ResourceManager.s
+.PHONY : src/external/ResourceManager/ResourceManager.s
 
 # target to generate assembly for a file
-src/external/ResourceManager.cpp.s:
-	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.s
-.PHONY : src/external/ResourceManager.cpp.s
+src/external/ResourceManager/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.s
+.PHONY : src/external/ResourceManager/ResourceManager.cpp.s
+
+src/external/SFMLCollision/Intersects.o: src/external/SFMLCollision/Intersects.cpp.o
+
+.PHONY : src/external/SFMLCollision/Intersects.o
+
+# target to build an object file
+src/external/SFMLCollision/Intersects.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o
+.PHONY : src/external/SFMLCollision/Intersects.cpp.o
+
+src/external/SFMLCollision/Intersects.i: src/external/SFMLCollision/Intersects.cpp.i
+
+.PHONY : src/external/SFMLCollision/Intersects.i
+
+# target to preprocess a source file
+src/external/SFMLCollision/Intersects.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.i
+.PHONY : src/external/SFMLCollision/Intersects.cpp.i
+
+src/external/SFMLCollision/Intersects.s: src/external/SFMLCollision/Intersects.cpp.s
+
+.PHONY : src/external/SFMLCollision/Intersects.s
+
+# target to generate assembly for a file
+src/external/SFMLCollision/Intersects.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.s
+.PHONY : src/external/SFMLCollision/Intersects.cpp.s
+
+src/external/SFMLCollision/Line.o: src/external/SFMLCollision/Line.cpp.o
+
+.PHONY : src/external/SFMLCollision/Line.o
+
+# target to build an object file
+src/external/SFMLCollision/Line.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o
+.PHONY : src/external/SFMLCollision/Line.cpp.o
+
+src/external/SFMLCollision/Line.i: src/external/SFMLCollision/Line.cpp.i
+
+.PHONY : src/external/SFMLCollision/Line.i
+
+# target to preprocess a source file
+src/external/SFMLCollision/Line.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.i
+.PHONY : src/external/SFMLCollision/Line.cpp.i
+
+src/external/SFMLCollision/Line.s: src/external/SFMLCollision/Line.cpp.s
+
+.PHONY : src/external/SFMLCollision/Line.s
+
+# target to generate assembly for a file
+src/external/SFMLCollision/Line.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.s
+.PHONY : src/external/SFMLCollision/Line.cpp.s
+
+src/external/SFMLCollision/Polygon.o: src/external/SFMLCollision/Polygon.cpp.o
+
+.PHONY : src/external/SFMLCollision/Polygon.o
+
+# target to build an object file
+src/external/SFMLCollision/Polygon.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o
+.PHONY : src/external/SFMLCollision/Polygon.cpp.o
+
+src/external/SFMLCollision/Polygon.i: src/external/SFMLCollision/Polygon.cpp.i
+
+.PHONY : src/external/SFMLCollision/Polygon.i
+
+# target to preprocess a source file
+src/external/SFMLCollision/Polygon.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.i
+.PHONY : src/external/SFMLCollision/Polygon.cpp.i
+
+src/external/SFMLCollision/Polygon.s: src/external/SFMLCollision/Polygon.cpp.s
+
+.PHONY : src/external/SFMLCollision/Polygon.s
+
+# target to generate assembly for a file
+src/external/SFMLCollision/Polygon.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.s
+.PHONY : src/external/SFMLCollision/Polygon.cpp.s
+
+src/external/SFMLCollision/VectorMath.o: src/external/SFMLCollision/VectorMath.cpp.o
+
+.PHONY : src/external/SFMLCollision/VectorMath.o
+
+# target to build an object file
+src/external/SFMLCollision/VectorMath.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o
+.PHONY : src/external/SFMLCollision/VectorMath.cpp.o
+
+src/external/SFMLCollision/VectorMath.i: src/external/SFMLCollision/VectorMath.cpp.i
+
+.PHONY : src/external/SFMLCollision/VectorMath.i
+
+# target to preprocess a source file
+src/external/SFMLCollision/VectorMath.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.i
+.PHONY : src/external/SFMLCollision/VectorMath.cpp.i
+
+src/external/SFMLCollision/VectorMath.s: src/external/SFMLCollision/VectorMath.cpp.s
+
+.PHONY : src/external/SFMLCollision/VectorMath.s
+
+# target to generate assembly for a file
+src/external/SFMLCollision/VectorMath.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.s
+.PHONY : src/external/SFMLCollision/VectorMath.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -378,6 +513,9 @@ help:
 	@echo "... src/Engine.o"
 	@echo "... src/Engine.i"
 	@echo "... src/Engine.s"
+	@echo "... src/Level.o"
+	@echo "... src/Level.i"
+	@echo "... src/Level.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
@@ -396,9 +534,21 @@ help:
 	@echo "... src/Scene/Scene.o"
 	@echo "... src/Scene/Scene.i"
 	@echo "... src/Scene/Scene.s"
-	@echo "... src/external/ResourceManager.o"
-	@echo "... src/external/ResourceManager.i"
-	@echo "... src/external/ResourceManager.s"
+	@echo "... src/external/ResourceManager/ResourceManager.o"
+	@echo "... src/external/ResourceManager/ResourceManager.i"
+	@echo "... src/external/ResourceManager/ResourceManager.s"
+	@echo "... src/external/SFMLCollision/Intersects.o"
+	@echo "... src/external/SFMLCollision/Intersects.i"
+	@echo "... src/external/SFMLCollision/Intersects.s"
+	@echo "... src/external/SFMLCollision/Line.o"
+	@echo "... src/external/SFMLCollision/Line.i"
+	@echo "... src/external/SFMLCollision/Line.s"
+	@echo "... src/external/SFMLCollision/Polygon.o"
+	@echo "... src/external/SFMLCollision/Polygon.i"
+	@echo "... src/external/SFMLCollision/Polygon.s"
+	@echo "... src/external/SFMLCollision/VectorMath.o"
+	@echo "... src/external/SFMLCollision/VectorMath.i"
+	@echo "... src/external/SFMLCollision/VectorMath.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

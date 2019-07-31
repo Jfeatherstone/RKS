@@ -1,8 +1,12 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "external/SFMLCollision/Polygon.hpp"
 
-class Player: public sf::Drawable{
+using namespace sf;
+using namespace std;
+
+class Player: public Polygon {
 
 private:
 
@@ -32,16 +36,6 @@ private:
     int m_level;
 
     /**
-     * @brief The sprite that will be drawn to the screen
-     */
-    sf::Sprite m_sprite;
-
-    /**
-     * @brief How fast the player is moving
-     */
-    sf::Vector2f m_velocity;
-
-    /**
      * @brief The base speed of the player, as opposed to their current velocity
      * (m_velocity) (in pixels/second)
      */
@@ -58,9 +52,11 @@ private:
 
 public:
 
+    // This allows us to use the constructors defined for polygons
+    using Polygon::Polygon;
+
+    // This is where all player specific things will be setup, like health
+    void init();
+
     void update(float elapsedTime);
-
-    // Inherited method from sf::Drawable
-    void draw(sf::RenderTarget& target, sf::RenderStates state) const;
-
 };

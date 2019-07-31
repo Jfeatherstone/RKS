@@ -4,6 +4,7 @@
 
 #include "Scene/Scene.hpp"
 #include "Player.hpp"
+#include "Level.hpp"
 
 class GameInstance: public Scene {
 
@@ -30,6 +31,12 @@ private:
      *      HUD VIEW
      *****************/
     sf::Sprite m_healthBar;
+
+
+    /******************
+     *    PLAYER VIEW
+     *****************/
+    Level m_currentLevel;
 
 public:
 

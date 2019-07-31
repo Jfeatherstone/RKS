@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "external/ResourceManager.hpp"
+#include "external/ResourceManager/ResourceManager.hpp"
 
 #include "Scene/MainMenu.hpp"
 #include "Scene/OptionsMenu.hpp"
@@ -11,6 +11,9 @@
 
 #include <iostream>
 
+using namespace std;
+using namespace sf;
+
 class Engine {
 
 private: 
@@ -18,12 +21,12 @@ private:
     /**
      * @brief The window that we will be drawing everything on
      */
-    sf::RenderWindow m_window;
+    RenderWindow m_window;
 
     /**
      * @brief Keeping track of how large the window is
      */
-    sf::Vector2f m_windowSize;
+    Vector2f m_windowSize;
 
     /**
      * @brief The default window size: 800x600
@@ -47,7 +50,7 @@ private:
      * 
      * @param activeScenes 
      */
-    void updateSceneStack(std::set<SceneType> activeScenes);
+    void updateSceneStack(set<SceneType> activeScenes);
 
     /*******************************************************
      *                 INITIALIZATION METHODS
@@ -58,7 +61,7 @@ private:
     /**
      * @brief Setup the window dimensions, limit FPS, and other initialization tasks
      */
-    void initializeWindow(sf::Vector2f windowSize);
+    void initializeWindow(Vector2f windowSize);
 
     /**
      * @brief Load the assets including sounds, textures and fonts
@@ -104,7 +107,7 @@ public:
     /**
      * @brief The name of the game that will be shown in the window title bar
      */
-    const static std::string GAME_NAME;
+    const static string GAME_NAME;
 
     /**
      * @brief The current version of the game
@@ -114,7 +117,7 @@ public:
     /**
      * @brief This constructor will run all of the initialize methods above
      */
-    Engine(sf::Vector2f windowSize = DEFAULT_WINDOW_SIZE);
+    Engine(Vector2f windowSize = DEFAULT_WINDOW_SIZE);
 
     /**
      * @brief This will run the main game loop, which will exit when the window is closed

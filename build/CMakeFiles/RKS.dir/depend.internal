@@ -3,57 +3,96 @@
 
 CMakeFiles/RKS.dir/src/Engine.cpp.o
  ../include/Engine.hpp
+ ../include/Level.hpp
  ../include/Player.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp
  ../include/Scene/PauseMenu.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/Engine.cpp
+CMakeFiles/RKS.dir/src/Level.cpp.o
+ ../include/Level.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
+ /home/jack/cpp-workspace/RKS/src/Level.cpp
 CMakeFiles/RKS.dir/src/Player.cpp.o
  ../include/Player.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/Player.cpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o
+ ../include/Level.hpp
  ../include/Player.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o
  ../include/Engine.hpp
+ ../include/Level.hpp
  ../include/Player.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp
  ../include/Scene/PauseMenu.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/Scene/MainMenu.cpp
 CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o
  ../include/Scene/OptionsMenu.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
  /home/jack/cpp-workspace/RKS/src/Scene/OptionsMenu.cpp
 CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o
  ../include/Scene/PauseMenu.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
  /home/jack/cpp-workspace/RKS/src/Scene/PauseMenu.cpp
 CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
  /home/jack/cpp-workspace/RKS/src/Scene/Scene.cpp
-CMakeFiles/RKS.dir/src/external/ResourceManager.cpp.o
- ../include/external/ResourceManager.hpp
- /home/jack/cpp-workspace/RKS/src/external/ResourceManager.cpp
+CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o
+ ../include/external/ResourceManager/ResourceManager.hpp
+ /home/jack/cpp-workspace/RKS/src/external/ResourceManager/ResourceManager.cpp
+CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o
+ /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Intersects.cpp
+CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
+ /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Line.cpp
+CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
+ /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Polygon.cpp
+CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o
+ ../include/external/SFMLCollision/VectorMath.hpp
+ /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/VectorMath.cpp
 CMakeFiles/RKS.dir/src/main.cpp.o
  ../include/Engine.hpp
+ ../include/Level.hpp
  ../include/Player.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp
  ../include/Scene/PauseMenu.hpp
  ../include/Scene/Scene.hpp
- ../include/external/ResourceManager.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/main.cpp

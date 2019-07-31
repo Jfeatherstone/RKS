@@ -4,6 +4,9 @@
 #include "external/SFMLCollision/Polygon.hpp"
 #include <tgmath.h>
 
+using namespace sf;
+using namespace std;
+
 /**
  * @brief The different sizes of levels that can be created
  * The number associated with each is the number of tiles each
@@ -32,12 +35,19 @@ private:
      */
     Polygon m_levelShape;
 
+    /**
+     * @brief The size of the window the level will be drawn on
+     */
+    Vector2f m_windowSize;
+
     void generateShape();
 
 
 public:
 
-    Level(LevelSize size);
+    Level();
+
+    void setSize(LevelSize levelSize, Vector2f windowSize);
 
     /**
      * @brief Overriden from sf::Drawable. Will draw all of the background tiles

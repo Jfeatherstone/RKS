@@ -9,10 +9,27 @@ void GameInstance::init(sf::Vector2f windowSize) {
     m_background.setSize(m_windowSize);
 
     /***************************
+     *     PLAYER INIT
+     **************************/
+    RectangleShape r;
+    r.setSize(Vector2f(50, 50));
+    m_player = Player(r);
+    m_player.setOrigin(m_player.getCentroid());
+    m_player.setPosition(m_windowSize * .5f);
+
+    /***************************
      *     HUD VIEW INIT
      **************************/
-    
+    m_HUDView.setSize(m_windowSize);
+    m_HUDView.setCenter(m_windowSize * .5f);
 
+    /***************************
+     *   PLAYER VIEW INIT
+     **************************/
+    m_playerView.setSize(m_windowSize);
+    m_playerView.setCenter(m_windowSize * .5f);
+
+    m_currentLevel.setSize(LevelSize::Medium, m_windowSize);
 
 }
 
@@ -50,5 +67,7 @@ void GameInstance::draw(sf::RenderTarget& target, sf::RenderStates state) const 
      **************************/
     target.setView(m_HUDView);
 
+    target.draw(m_currentLevel);
 
+    target.draw(m_player);
 }

@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jack/cpp-workspace/RKS/include 
+CXX_INCLUDES = -I/home/jack/cpp-workspace/RKS/include -I/home/jack/cpp-workspace/RKS/include/external 
 

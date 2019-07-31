@@ -7,7 +7,7 @@ project(RKS)
 
 file(GLOB_RECURSE SRC src/*.cpp external/*.cpp)
 
-include_directories(include/)
+include_directories(include/ include/external/)
 
 find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 

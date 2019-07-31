@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "external/ResourceManager.hpp"
+#include "external/ResourceManager/ResourceManager.hpp"
 
 
 /**
