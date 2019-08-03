@@ -14,38 +14,6 @@ external/SFMLCollision/Polygon.hpp
 tgmath.h
 -
 
-../include/Player.hpp
-SFML/Graphics.hpp
--
-external/SFMLCollision/Polygon.hpp
-../include/external/SFMLCollision/Polygon.hpp
-
-../include/Scene/GameInstance.hpp
-SFML/Graphics.hpp
--
-Scene/Scene.hpp
-../include/Scene/Scene/Scene.hpp
-Player.hpp
-../include/Scene/Player.hpp
-Level.hpp
-../include/Scene/Level.hpp
-
-../include/Scene/Scene.hpp
-SFML/Graphics.hpp
--
-external/ResourceManager/ResourceManager.hpp
-../include/Scene/external/ResourceManager/ResourceManager.hpp
-
-../include/external/ResourceManager/ResourceManager.hpp
-SFML/Graphics.hpp
--
-SFML/Audio.hpp
--
-iostream
--
-filesystem
--
-
 ../include/external/SFMLCollision/Line.hpp
 SFML/Graphics.hpp
 -
@@ -74,7 +42,7 @@ SFML/Graphics.hpp
 tgmath.h
 -
 
-/home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp
-Scene/GameInstance.hpp
-/home/jack/cpp-workspace/RKS/src/Scene/Scene/GameInstance.hpp
+/home/jack/cpp-workspace/RKS/src/Level.cpp
+Level.hpp
+/home/jack/cpp-workspace/RKS/src/Level.hpp
 

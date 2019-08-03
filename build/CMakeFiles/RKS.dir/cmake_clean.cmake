@@ -13,8 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o"
   "CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o"
   "CMakeFiles/RKS.dir/src/main.cpp.o"
-  "RKS.pdb"
   "RKS"
+  "RKS.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

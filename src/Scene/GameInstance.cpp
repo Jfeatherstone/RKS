@@ -9,14 +9,27 @@ void GameInstance::init(sf::Vector2f windowSize) {
     m_background.setSize(m_windowSize);
 
     /***************************
+     *     CONTROLS INIT
+     **************************/
+    m_pauseKey = Keyboard::Escape;
+    m_forwardsKey = Keyboard::W;
+    m_backwardsKey = Keyboard::S;
+    m_rightKey = Keyboard::D;
+    m_leftKey = Keyboard::A;
+    m_rotateRightKey = Keyboard::E;
+    m_rotateLeftKey = Keyboard::Q;
+    m_dodgeKey = Keyboard::Space;
+
+    /***************************
      *     PLAYER INIT
      **************************/
     RectangleShape r;
     r.setSize(Vector2f(50, 50));
-    m_player = Player(r); // Temporarily we will use a rectangle as the player sprite
+    m_player = Player(r); // Temporarily, we will use a rectangle as the player sprite
     m_player.setOrigin(m_player.getCentroid());
     m_player.setPosition(m_windowSize * .5f);
     m_player.init();
+    m_timeSinceDodge = 0;
 
     /***************************
      *     HUD VIEW INIT
@@ -30,8 +43,7 @@ void GameInstance::init(sf::Vector2f windowSize) {
     m_playerView.setSize(m_windowSize);
     m_playerView.setCenter(m_windowSize * .5f);
 
-    m_currentLevel.setSize(LevelSize::Medium, m_windowSize);
-
+    m_currentLevel.setSize(LevelSize::Tiny, m_windowSize);
 }
 
 set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
@@ -44,55 +56,78 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
 
         if (event.type == sf::Event::KeyPressed) {
 
-            if (event.key.code == Keyboard::Escape)
+            if (event.key.code == m_pauseKey)
                 // Enter the pause menu
                 scenes.insert(SceneType::PauseMenu);
 
-            if (event.key.code == Keyboard::W) {
+            if (event.key.code == m_forwardsKey) {
                 m_player.setVelocity(m_player.getVelocity() + Vector2f(0, -m_player.getSpeed()));
             }
-            if (event.key.code == Keyboard::S) {
+            if (event.key.code == m_backwardsKey) {
                 m_player.setVelocity(m_player.getVelocity() + Vector2f(0, m_player.getSpeed()));
             }
-            if (event.key.code == Keyboard::A) {
+            if (event.key.code == m_leftKey) {
                 m_player.setVelocity(m_player.getVelocity() + Vector2f(-m_player.getSpeed(), 0));
             }
-            if (event.key.code == Keyboard::D) {
+            if (event.key.code == m_rightKey) {
                 m_player.setVelocity(m_player.getVelocity() + Vector2f(m_player.getSpeed(), 0));
+            }
+            if (event.key.code == m_rotateLeftKey) {
+                m_player.setAngularVelocity(m_player.getAngularVelocity() - m_player.getRotationSpeed());
+            }
+            if (event.key.code == m_rotateRightKey) {
+                m_player.setAngularVelocity(m_player.getAngularVelocity() + m_player.getRotationSpeed());
+            }
+            if (event.key.code == m_dodgeKey && m_timeSinceDodge >= m_player.getDodgeCooldown()) {
+                cout << "Dodge" << endl;
+                m_timeSinceDodge = 0;
             }
 
         }
 
         if (event.type == Event::KeyReleased) {
 
-            if (event.key.code == Keyboard::W) {
+            if (event.key.code == m_forwardsKey) {
                 m_player.setVelocity(m_player.getVelocity() - Vector2f(0, -m_player.getSpeed()));
             }
-            if (event.key.code == Keyboard::S) {
+            if (event.key.code == m_backwardsKey) {
                 m_player.setVelocity(m_player.getVelocity() - Vector2f(0, m_player.getSpeed()));
             }
-            if (event.key.code == Keyboard::A) {
+            if (event.key.code == m_leftKey) {
                 m_player.setVelocity(m_player.getVelocity() - Vector2f(-m_player.getSpeed(), 0));
             }
-            if (event.key.code == Keyboard::D) {
+            if (event.key.code == m_rightKey) {
                 m_player.setVelocity(m_player.getVelocity() - Vector2f(m_player.getSpeed(), 0));
+            }
+            if (event.key.code == m_rotateLeftKey) {
+                m_player.setAngularVelocity(m_player.getAngularVelocity() + m_player.getRotationSpeed());
+            }
+            if (event.key.code == m_rotateRightKey) {
+                m_player.setAngularVelocity(m_player.getAngularVelocity() - m_player.getRotationSpeed());
+                
+                // Get the direction to dodge in
+                Vector2f dodgeUnitVec;
+                if (VectorMath::mag(m_player.getVelocity()) != 0)
+                    dodgeUnitVec = VectorMath::normalize(m_player.getVelocity());
+                else
+                    // Otherwise, we go in the direction of the mouse
+                    dodgeUnitVec = VectorMath::normalize(Vector2f(Mouse::getPosition(window)) - m_windowSize * .5f);
+                
             }
 
         }
 
     }
 
-    if (Keyboard::isKeyPressed(Keyboard::W)) {
-
-    }
+    m_timeSinceDodge += elapsedTime;
 
     return scenes;
 }
 
 void GameInstance::update(sf::RenderWindow& window, float elapsedTime) {
 
-    m_player.update(elapsedTime);
-
+    //m_player.update(elapsedTime);
+    m_currentLevel.updateLevel(m_player.getVelocity()*elapsedTime, m_player.getAngularVelocity()*elapsedTime, m_player.getPosition());
 }
 
 void GameInstance::draw(sf::RenderTarget& target, sf::RenderStates state) const {

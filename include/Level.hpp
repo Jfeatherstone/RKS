@@ -13,11 +13,11 @@ using namespace std;
  * size will be across (about)
  */
 enum class LevelSize: int {
-    Tiny = 16,
-    Small = 24,
-    Medium = 36,
-    Large = 48,
-    Huge = 60,
+    Tiny = 30,
+    Small = 48,
+    Medium = 60,
+    Large = 75,
+    Huge = 100,
 };
 
 class Level: public sf::Drawable {
@@ -40,6 +40,12 @@ private:
      */
     Vector2f m_windowSize;
 
+    /**
+     * @brief The view that all of the enemies and level background will be drawn on, such that
+     * they can be easily rotated
+     */
+    View m_levelView;
+
     void generateShape();
 
 
@@ -49,7 +55,7 @@ public:
 
     void setSize(LevelSize levelSize, Vector2f windowSize);
 
-    void updateLevel(Vector2f moveDistance, float rotationAngle, Vector2f playerPosition)
+    void updateLevel(Vector2f moveDistance, float rotationAngle, Vector2f playerPosition);
 
     /**
      * @brief Overriden from sf::Drawable. Will draw all of the background tiles

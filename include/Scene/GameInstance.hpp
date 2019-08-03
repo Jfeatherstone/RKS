@@ -10,10 +10,22 @@ class GameInstance: public Scene {
 
 private:
 
+    // Key binds stuff
+    Keyboard::Key m_pauseKey;
+    Keyboard::Key m_forwardsKey;
+    Keyboard::Key m_backwardsKey;
+    Keyboard::Key m_rightKey;
+    Keyboard::Key m_leftKey;
+    Keyboard::Key m_rotateLeftKey;
+    Keyboard::Key m_rotateRightKey;
+    Keyboard::Key m_dodgeKey;
+
     /**
      * @brief The player in the center of the screen
      */
     Player m_player;
+
+    float m_timeSinceDodge;
 
     /**
      * @brief The view the player and all environment/enemies will be drawn on that

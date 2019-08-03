@@ -139,7 +139,6 @@ void Engine::update(float elapsedTime) {
 
 
 void Engine::updateSceneStack(std::set<SceneType> activeScenes) {
-
     // Now iterate through the scenes in the vector
     for (SceneType st: activeScenes) {
         // And toggle them

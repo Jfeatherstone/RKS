@@ -41,6 +41,10 @@ private:
      */
     float m_speed;
 
+    float m_rotationSpeed;
+
+    float m_dodgeCooldown;
+
     /**
      * @brief This method will check if the player is able to level up, and if they
      * are, their stats will be adjusted, and a messaged will be shown
@@ -61,4 +65,6 @@ public:
     //void update(float elapsedTime);
 
     float getSpeed();
+    float getRotationSpeed();
+    float getDodgeCooldown();
 };
