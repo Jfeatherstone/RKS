@@ -16,6 +16,7 @@ CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/external/SFMLCollision/VectorMat
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../src/Engine.cpp
 
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/Level.hpp
+CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/ResourceManager/ResourceManager.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/Line.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/Polygon.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/VectorMath.hpp

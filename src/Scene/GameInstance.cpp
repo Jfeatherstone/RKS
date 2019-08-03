@@ -54,7 +54,7 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
     
     while (window.pollEvent(event)) {
 
-        if (event.type == sf::Event::KeyPressed) {
+        if (event.type == sf::Event::KeyPressed && window.hasFocus()) {
 
             if (event.key.code == m_pauseKey)
                 // Enter the pause menu
@@ -112,7 +112,7 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
                 else
                     // Otherwise, we go in the direction of the mouse
                     dodgeUnitVec = VectorMath::normalize(Vector2f(Mouse::getPosition(window)) - m_windowSize * .5f);
-                
+
             }
 
         }
@@ -127,19 +127,24 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
 void GameInstance::update(sf::RenderWindow& window, float elapsedTime) {
 
     //m_player.update(elapsedTime);
-    m_currentLevel.updateLevel(m_player.getVelocity()*elapsedTime, m_player.getAngularVelocity()*elapsedTime, m_player.getPosition());
+    m_currentLevel.updateLevel(m_player.getVelocity() * elapsedTime, m_player.getAngularVelocity() * elapsedTime);
 }
 
 void GameInstance::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
     target.draw(m_background);
+    target.draw(m_currentLevel);
 
     /***************************
      *         HUD VIEW
      **************************/
     target.setView(m_HUDView);
 
-    target.draw(m_currentLevel);
+
+    /***************************
+     *       PLAYER VIEW
+     **************************/
+    target.setView(m_playerView);
 
     target.draw(m_player);
 }

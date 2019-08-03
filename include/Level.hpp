@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "external/SFMLCollision/Polygon.hpp"
+#include "external/ResourceManager/ResourceManager.hpp"
 #include <tgmath.h>
 
 using namespace sf;
@@ -55,7 +56,7 @@ public:
 
     void setSize(LevelSize levelSize, Vector2f windowSize);
 
-    void updateLevel(Vector2f moveDistance, float rotationAngle, Vector2f playerPosition);
+    void updateLevel(Vector2f moveDistance, float rotationAngle);
 
     /**
      * @brief Overriden from sf::Drawable. Will draw all of the background tiles

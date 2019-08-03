@@ -50,9 +50,13 @@ void Level::generateShape() {
     m_levelShape = shape;
     m_levelShape.setOrigin(m_levelShape.getCentroid());
     m_levelShape.setPosition(m_windowSize * .5f);
-    m_levelShape.setFillColor(Color::Blue);
+    //m_levelShape.setFillColor(Color::Blue);
+    Texture* t = new Texture();
+    t->loadFromFile("assets/textures/test_tile.png");
+    t->setRepeated(true);
+    m_levelShape.setTextureRect(IntRect(m_levelShape.getLocalBounds()));
+    m_levelShape.setTexture(t);
     m_levelShape.setScale(32, 32);
-
 }
 
 void Level::draw(sf::RenderTarget& target, sf::RenderStates state) const {
@@ -67,7 +71,7 @@ void Level::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.setView(oldView);
 }
 
-void Level::updateLevel(Vector2f moveDistance, float rotationAngle, Vector2f playerPosition) {
+void Level::updateLevel(Vector2f moveDistance, float rotationAngle) {
     //m_levelView.setCenter(playerPosition - m_levelView.getCenter());
     m_levelView.move(moveDistance);
     m_levelView.rotate(rotationAngle);

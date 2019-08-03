@@ -17,6 +17,7 @@ CMakeFiles/RKS.dir/src/Engine.cpp.o
  /home/jack/cpp-workspace/RKS/src/Engine.cpp
 CMakeFiles/RKS.dir/src/Level.cpp.o
  ../include/Level.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
  ../include/external/SFMLCollision/Line.hpp
  ../include/external/SFMLCollision/Polygon.hpp
  ../include/external/SFMLCollision/VectorMath.hpp
