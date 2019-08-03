@@ -26,6 +26,7 @@ private:
     Player m_player;
 
     float m_timeSinceDodge;
+    float m_timeSinceRangedAttack;
 
     /**
      * @brief The view the player and all environment/enemies will be drawn on that

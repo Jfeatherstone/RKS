@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "external/SFMLCollision/Polygon.hpp"
+#include "RangedAttack.hpp"
+#include "external/ResourceManager/ResourceManager.hpp"
 
 using namespace sf;
 using namespace std;
@@ -45,6 +47,8 @@ private:
 
     float m_dodgeCooldown;
 
+    RangedAttack m_rangedAttack;
+
     /**
      * @brief This method will check if the player is able to level up, and if they
      * are, their stats will be adjusted, and a messaged will be shown
@@ -67,4 +71,6 @@ public:
     float getSpeed();
     float getRotationSpeed();
     float getDodgeCooldown();
+
+    RangedAttack getRangedAttack();
 };

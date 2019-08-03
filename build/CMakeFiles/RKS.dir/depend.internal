@@ -5,6 +5,7 @@ CMakeFiles/RKS.dir/src/Engine.cpp.o
  ../include/Engine.hpp
  ../include/Level.hpp
  ../include/Player.hpp
+ ../include/RangedAttack.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp
@@ -17,6 +18,7 @@ CMakeFiles/RKS.dir/src/Engine.cpp.o
  /home/jack/cpp-workspace/RKS/src/Engine.cpp
 CMakeFiles/RKS.dir/src/Level.cpp.o
  ../include/Level.hpp
+ ../include/RangedAttack.hpp
  ../include/external/ResourceManager/ResourceManager.hpp
  ../include/external/SFMLCollision/Line.hpp
  ../include/external/SFMLCollision/Polygon.hpp
@@ -24,13 +26,22 @@ CMakeFiles/RKS.dir/src/Level.cpp.o
  /home/jack/cpp-workspace/RKS/src/Level.cpp
 CMakeFiles/RKS.dir/src/Player.cpp.o
  ../include/Player.hpp
+ ../include/RangedAttack.hpp
+ ../include/external/ResourceManager/ResourceManager.hpp
  ../include/external/SFMLCollision/Line.hpp
  ../include/external/SFMLCollision/Polygon.hpp
  ../include/external/SFMLCollision/VectorMath.hpp
  /home/jack/cpp-workspace/RKS/src/Player.cpp
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o
+ ../include/RangedAttack.hpp
+ ../include/external/SFMLCollision/Line.hpp
+ ../include/external/SFMLCollision/Polygon.hpp
+ ../include/external/SFMLCollision/VectorMath.hpp
+ /home/jack/cpp-workspace/RKS/src/RangedAttack.cpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o
  ../include/Level.hpp
  ../include/Player.hpp
+ ../include/RangedAttack.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager/ResourceManager.hpp
@@ -42,6 +53,7 @@ CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o
  ../include/Engine.hpp
  ../include/Level.hpp
  ../include/Player.hpp
+ ../include/RangedAttack.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp
@@ -90,6 +102,7 @@ CMakeFiles/RKS.dir/src/main.cpp.o
  ../include/Engine.hpp
  ../include/Level.hpp
  ../include/Player.hpp
+ ../include/RangedAttack.hpp
  ../include/Scene/GameInstance.hpp
  ../include/Scene/MainMenu.hpp
  ../include/Scene/OptionsMenu.hpp

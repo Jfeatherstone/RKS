@@ -13,10 +13,22 @@ external/SFMLCollision/Polygon.hpp
 ../include/external/SFMLCollision/Polygon.hpp
 external/ResourceManager/ResourceManager.hpp
 ../include/external/ResourceManager/ResourceManager.hpp
+RangedAttack.hpp
+../include/RangedAttack.hpp
 tgmath.h
 -
 
 ../include/Player.hpp
+SFML/Graphics.hpp
+-
+external/SFMLCollision/Polygon.hpp
+../include/external/SFMLCollision/Polygon.hpp
+RangedAttack.hpp
+../include/RangedAttack.hpp
+external/ResourceManager/ResourceManager.hpp
+../include/external/ResourceManager/ResourceManager.hpp
+
+../include/RangedAttack.hpp
 SFML/Graphics.hpp
 -
 external/SFMLCollision/Polygon.hpp
@@ -75,10 +87,6 @@ SFML/Graphics.hpp
 -
 tgmath.h
 -
-
-/home/jack/cpp-workspace/RKS/src/Level.cpp
-Level.hpp
-/home/jack/cpp-workspace/RKS/src/Level.hpp
 
 /home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp
 Scene/GameInstance.hpp

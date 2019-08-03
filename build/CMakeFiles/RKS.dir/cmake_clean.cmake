@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RKS.dir/src/Engine.cpp.o"
   "CMakeFiles/RKS.dir/src/Level.cpp.o"
   "CMakeFiles/RKS.dir/src/Player.cpp.o"
+  "CMakeFiles/RKS.dir/src/RangedAttack.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o"
   "CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o"

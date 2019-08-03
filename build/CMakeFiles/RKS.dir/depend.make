@@ -4,6 +4,7 @@
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Engine.hpp
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Level.hpp
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Player.hpp
+CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/RangedAttack.hpp
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Scene/GameInstance.hpp
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Scene/MainMenu.hpp
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/Scene/OptionsMenu.hpp
@@ -16,6 +17,7 @@ CMakeFiles/RKS.dir/src/Engine.cpp.o: ../include/external/SFMLCollision/VectorMat
 CMakeFiles/RKS.dir/src/Engine.cpp.o: ../src/Engine.cpp
 
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/Level.hpp
+CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/RangedAttack.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/ResourceManager/ResourceManager.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/Line.hpp
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/Polygon.hpp
@@ -23,13 +25,22 @@ CMakeFiles/RKS.dir/src/Level.cpp.o: ../include/external/SFMLCollision/VectorMath
 CMakeFiles/RKS.dir/src/Level.cpp.o: ../src/Level.cpp
 
 CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/Player.hpp
+CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/RangedAttack.hpp
+CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/external/ResourceManager/ResourceManager.hpp
 CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/external/SFMLCollision/Line.hpp
 CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/external/SFMLCollision/Polygon.hpp
 CMakeFiles/RKS.dir/src/Player.cpp.o: ../include/external/SFMLCollision/VectorMath.hpp
 CMakeFiles/RKS.dir/src/Player.cpp.o: ../src/Player.cpp
 
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../include/RangedAttack.hpp
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../include/external/SFMLCollision/Line.hpp
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../include/external/SFMLCollision/Polygon.hpp
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../include/external/SFMLCollision/VectorMath.hpp
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../src/RangedAttack.cpp
+
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/Level.hpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/Player.hpp
+CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/RangedAttack.hpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/Scene/GameInstance.hpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../include/external/ResourceManager/ResourceManager.hpp
@@ -41,6 +52,7 @@ CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../src/Scene/GameInstance.cpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Engine.hpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Level.hpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Player.hpp
+CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/RangedAttack.hpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/GameInstance.hpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/MainMenu.hpp
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/OptionsMenu.hpp
@@ -89,6 +101,7 @@ CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o: ../src/external/
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Engine.hpp
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Level.hpp
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Player.hpp
+CMakeFiles/RKS.dir/src/main.cpp.o: ../include/RangedAttack.hpp
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Scene/GameInstance.hpp
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Scene/MainMenu.hpp
 CMakeFiles/RKS.dir/src/main.cpp.o: ../include/Scene/OptionsMenu.hpp

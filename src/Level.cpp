@@ -11,6 +11,8 @@ void Level::setSize(LevelSize levelSize, Vector2f windowSize) {
     m_levelView.setSize(windowSize);
     m_levelView.setCenter(windowSize * .5f);
 
+    m_projectiles = {};
+
     generateShape();
 }
 
@@ -59,6 +61,10 @@ void Level::generateShape() {
     m_levelShape.setScale(32, 32);
 }
 
+void Level::addProjectile(Projectile* projectile) {
+    m_projectiles.push_back(projectile);
+}
+
 void Level::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     
     // We have to hold onto the old view so we don't make any permanent changes outside of this method
@@ -68,11 +74,25 @@ void Level::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
     target.draw(m_levelShape);
 
+    for (int i = 0; i < m_projectiles.size(); i++) {
+        target.draw(*m_projectiles[i]->shape);
+    }
+
     target.setView(oldView);
 }
 
-void Level::updateLevel(Vector2f moveDistance, float rotationAngle) {
+void Level::updateLevel(Vector2f moveDistance, float rotationAngle, float elapsedTime) {
     //m_levelView.setCenter(playerPosition - m_levelView.getCenter());
     m_levelView.move(moveDistance);
     m_levelView.rotate(rotationAngle);
+
+    for (int i = 0; i < m_projectiles.size(); i++) {
+        if (m_projectiles[i]->distanceTraveled >= m_projectiles[i]->totalTravelDistance) {
+            m_projectiles.erase(m_projectiles.begin() + i);
+            //delete m_projectiles[i];
+        } else {
+            m_projectiles[i]->shape->update(elapsedTime);
+            m_projectiles[i]->distanceTraveled += VectorMath::mag(m_projectiles[i]->shape->getVelocity() * elapsedTime);
+        }
+    }
 }

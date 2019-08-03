@@ -30,6 +30,7 @@ void GameInstance::init(sf::Vector2f windowSize) {
     m_player.setPosition(m_windowSize * .5f);
     m_player.init();
     m_timeSinceDodge = 0;
+    m_timeSinceRangedAttack = 0;
 
     /***************************
      *     HUD VIEW INIT
@@ -117,17 +118,23 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
 
         }
 
+        if (Mouse::isButtonPressed(Mouse::Button::Left) && window.hasFocus() && m_timeSinceRangedAttack >= m_player.getRangedAttack().getAttackSpeed()) {
+            Vector2f directionVec = VectorMath::normalize(Vector2f(Mouse::getPosition(window)) - m_windowSize * .5f);
+            m_currentLevel.addProjectile(m_player.getRangedAttack().createProjectile(directionVec, m_player.getPosition()));
+            m_timeSinceRangedAttack = 0;
+        }
+
     }
 
     m_timeSinceDodge += elapsedTime;
-
+    m_timeSinceRangedAttack += elapsedTime;
     return scenes;
 }
 
 void GameInstance::update(sf::RenderWindow& window, float elapsedTime) {
 
     //m_player.update(elapsedTime);
-    m_currentLevel.updateLevel(m_player.getVelocity() * elapsedTime, m_player.getAngularVelocity() * elapsedTime);
+    m_currentLevel.updateLevel(m_player.getVelocity() * elapsedTime, m_player.getAngularVelocity() * elapsedTime, elapsedTime);
 }
 
 void GameInstance::draw(sf::RenderTarget& target, sf::RenderStates state) const {

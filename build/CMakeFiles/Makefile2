@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/RKS.dir/all:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/depend
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target RKS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target RKS"
 .PHONY : CMakeFiles/RKS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RKS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/cpp-workspace/RKS/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/cpp-workspace/RKS/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RKS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/cpp-workspace/RKS/build/CMakeFiles 0
 .PHONY : CMakeFiles/RKS.dir/rule

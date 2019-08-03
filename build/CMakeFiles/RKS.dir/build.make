@@ -96,9 +96,22 @@ CMakeFiles/RKS.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RKS.dir/src/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/RKS/src/Player.cpp -o CMakeFiles/RKS.dir/src/Player.cpp.s
 
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: CMakeFiles/RKS.dir/flags.make
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.o: ../src/RangedAttack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RKS.dir/src/RangedAttack.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/RangedAttack.cpp.o -c /home/jack/cpp-workspace/RKS/src/RangedAttack.cpp
+
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RKS.dir/src/RangedAttack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/cpp-workspace/RKS/src/RangedAttack.cpp > CMakeFiles/RKS.dir/src/RangedAttack.cpp.i
+
+CMakeFiles/RKS.dir/src/RangedAttack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RKS.dir/src/RangedAttack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/RKS/src/RangedAttack.cpp -o CMakeFiles/RKS.dir/src/RangedAttack.cpp.s
+
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o: ../src/Scene/GameInstance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o -c /home/jack/cpp-workspace/RKS/src/Scene/GameInstance.cpp
 
 CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o: ../src/Scene/MainMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o -c /home/jack/cpp-workspace/RKS/src/Scene/MainMenu.cpp
 
 CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o: ../src/Scene/OptionsMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o -c /home/jack/cpp-workspace/RKS/src/Scene/OptionsMenu.cpp
 
 CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o: ../src/Scene/PauseMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.o -c /home/jack/cpp-workspace/RKS/src/Scene/PauseMenu.cpp
 
 CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/RKS.dir/src/Scene/PauseMenu.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o: ../src/Scene/Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/Scene/Scene.cpp.o -c /home/jack/cpp-workspace/RKS/src/Scene/Scene.cpp
 
 CMakeFiles/RKS.dir/src/Scene/Scene.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/RKS.dir/src/Scene/Scene.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o: ../src/external/ResourceManager/ResourceManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.o -c /home/jack/cpp-workspace/RKS/src/external/ResourceManager/ResourceManager.cpp
 
 CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/RKS.dir/src/external/ResourceManager/ResourceManager.cpp.s: cmake_for
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o: ../src/external/SFMLCollision/Intersects.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.o -c /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Intersects.cpp
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/RKS.dir/src/external/SFMLCollision/Intersects.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o: ../src/external/SFMLCollision/Line.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.o -c /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Line.cpp
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/RKS.dir/src/external/SFMLCollision/Line.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o: ../src/external/SFMLCollision/Polygon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.o -c /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/Polygon.cpp
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/RKS.dir/src/external/SFMLCollision/Polygon.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o: ../src/external/SFMLCollision/VectorMath.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.o -c /home/jack/cpp-workspace/RKS/src/external/SFMLCollision/VectorMath.cpp
 
 CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/RKS.dir/src/external/SFMLCollision/VectorMath.cpp.s: cmake_force
 
 CMakeFiles/RKS.dir/src/main.cpp.o: CMakeFiles/RKS.dir/flags.make
 CMakeFiles/RKS.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RKS.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RKS.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RKS.dir/src/main.cpp.o -c /home/jack/cpp-workspace/RKS/src/main.cpp
 
 CMakeFiles/RKS.dir/src/main.cpp.i: cmake_force
@@ -244,6 +257,7 @@ RKS_OBJECTS = \
 "CMakeFiles/RKS.dir/src/Engine.cpp.o" \
 "CMakeFiles/RKS.dir/src/Level.cpp.o" \
 "CMakeFiles/RKS.dir/src/Player.cpp.o" \
+"CMakeFiles/RKS.dir/src/RangedAttack.cpp.o" \
 "CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o" \
 "CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o" \
 "CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o" \
@@ -262,6 +276,7 @@ RKS_EXTERNAL_OBJECTS =
 RKS: CMakeFiles/RKS.dir/src/Engine.cpp.o
 RKS: CMakeFiles/RKS.dir/src/Level.cpp.o
 RKS: CMakeFiles/RKS.dir/src/Player.cpp.o
+RKS: CMakeFiles/RKS.dir/src/RangedAttack.cpp.o
 RKS: CMakeFiles/RKS.dir/src/Scene/GameInstance.cpp.o
 RKS: CMakeFiles/RKS.dir/src/Scene/MainMenu.cpp.o
 RKS: CMakeFiles/RKS.dir/src/Scene/OptionsMenu.cpp.o
@@ -279,7 +294,7 @@ RKS: /usr/lib/libsfml-audio.so.2.5.1
 RKS: /usr/lib/libsfml-window.so.2.5.1
 RKS: /usr/lib/libsfml-system.so.2.5.1
 RKS: CMakeFiles/RKS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable RKS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/cpp-workspace/RKS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable RKS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RKS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

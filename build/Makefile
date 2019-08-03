@@ -204,6 +204,33 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/RangedAttack.o: src/RangedAttack.cpp.o
+
+.PHONY : src/RangedAttack.o
+
+# target to build an object file
+src/RangedAttack.cpp.o:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/RangedAttack.cpp.o
+.PHONY : src/RangedAttack.cpp.o
+
+src/RangedAttack.i: src/RangedAttack.cpp.i
+
+.PHONY : src/RangedAttack.i
+
+# target to preprocess a source file
+src/RangedAttack.cpp.i:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/RangedAttack.cpp.i
+.PHONY : src/RangedAttack.cpp.i
+
+src/RangedAttack.s: src/RangedAttack.cpp.s
+
+.PHONY : src/RangedAttack.s
+
+# target to generate assembly for a file
+src/RangedAttack.cpp.s:
+	$(MAKE) -f CMakeFiles/RKS.dir/build.make CMakeFiles/RKS.dir/src/RangedAttack.cpp.s
+.PHONY : src/RangedAttack.cpp.s
+
 src/Scene/GameInstance.o: src/Scene/GameInstance.cpp.o
 
 .PHONY : src/Scene/GameInstance.o
@@ -519,6 +546,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/RangedAttack.o"
+	@echo "... src/RangedAttack.i"
+	@echo "... src/RangedAttack.s"
 	@echo "... src/Scene/GameInstance.o"
 	@echo "... src/Scene/GameInstance.i"
 	@echo "... src/Scene/GameInstance.s"

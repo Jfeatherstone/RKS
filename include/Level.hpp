@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "external/SFMLCollision/Polygon.hpp"
 #include "external/ResourceManager/ResourceManager.hpp"
+#include "RangedAttack.hpp"
 #include <tgmath.h>
 
 using namespace sf;
@@ -37,6 +38,11 @@ private:
     Polygon m_levelShape;
 
     /**
+     * @brief Current projectiles on the screen
+     */
+    vector<Projectile*> m_projectiles;
+
+    /**
      * @brief The size of the window the level will be drawn on
      */
     Vector2f m_windowSize;
@@ -56,8 +62,10 @@ public:
 
     void setSize(LevelSize levelSize, Vector2f windowSize);
 
-    void updateLevel(Vector2f moveDistance, float rotationAngle);
+    void updateLevel(Vector2f moveDistance, float rotationAngle, float elapsedTime);
 
+    void addProjectile(Projectile* projectile);
+    
     /**
      * @brief Overriden from sf::Drawable. Will draw all of the background tiles
      * 
