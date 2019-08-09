@@ -62,9 +62,11 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
                 scenes.insert(SceneType::PauseMenu);
 
             if (event.key.code == m_forwardsKey) {
-                m_player.setVelocity(m_player.getVelocity() + Vector2f(0, -m_player.getSpeed()));
+                m_velocity += Vector2f(0, -m_player.getSpeed());
+                //m_player.setVelocity(m_player.getVelocity() + Vector2f(0, -m_player.getSpeed()));
             }
             if (event.key.code == m_backwardsKey) {
+                m_velocity += Vector2f(0, m_player.getSpeed());
                 m_player.setVelocity(m_player.getVelocity() + Vector2f(0, m_player.getSpeed()));
             }
             if (event.key.code == m_leftKey) {
@@ -89,18 +91,23 @@ set<SceneType> GameInstance::input(RenderWindow& window, float elapsedTime) {
         if (event.type == Event::KeyReleased) {
 
             if (event.key.code == m_forwardsKey) {
-                m_player.setVelocity(m_player.getVelocity() - Vector2f(0, -m_player.getSpeed()));
+                m_velocity += -Vector2f(0, -m_player.getSpeed());
+                //m_player.setVelocity(m_player.getVelocity() - Vector2f(0, -m_player.getSpeed()));
             }
             if (event.key.code == m_backwardsKey) {
-                m_player.setVelocity(m_player.getVelocity() - Vector2f(0, m_player.getSpeed()));
+                m_velocity += -Vector2f(0, m_player.getSpeed());
+                //m_player.setVelocity(m_player.getVelocity() - Vector2f(0, m_player.getSpeed()));
             }
             if (event.key.code == m_leftKey) {
-                m_player.setVelocity(m_player.getVelocity() - Vector2f(-m_player.getSpeed(), 0));
+                m_velocity += -Vector2f(-m_player.getSpeed(), 0);
+                //m_player.setVelocity(m_player.getVelocity() - Vector2f(-m_player.getSpeed(), 0));
             }
             if (event.key.code == m_rightKey) {
-                m_player.setVelocity(m_player.getVelocity() - Vector2f(m_player.getSpeed(), 0));
+                m_velocity += -Vector2f(m_player.getSpeed(), 0);
+                //m_player.setVelocity(m_player.getVelocity() - Vector2f(m_player.getSpeed(), 0));
             }
             if (event.key.code == m_rotateLeftKey) {
+                m_rotationVelocity += m_player.getRotationSpeed();
                 m_player.setAngularVelocity(m_player.getAngularVelocity() + m_player.getRotationSpeed());
             }
             if (event.key.code == m_rotateRightKey) {

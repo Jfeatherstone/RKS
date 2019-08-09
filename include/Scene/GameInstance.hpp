@@ -50,6 +50,8 @@ private:
      *    PLAYER VIEW
      *****************/
     Level m_currentLevel;
+    Vector2f m_velocity;
+    float m_rotationVelocity;
 
 public:
 

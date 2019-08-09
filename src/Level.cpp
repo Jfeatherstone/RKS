@@ -83,9 +83,11 @@ void Level::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
 void Level::updateLevel(Vector2f moveDistance, float rotationAngle, float elapsedTime) {
     //m_levelView.setCenter(playerPosition - m_levelView.getCenter());
+    // Move the level based on player movement
     m_levelView.move(moveDistance);
     m_levelView.rotate(rotationAngle);
 
+    // Update all of the projectiles
     for (int i = 0; i < m_projectiles.size(); i++) {
         if (m_projectiles[i]->distanceTraveled >= m_projectiles[i]->totalTravelDistance) {
             m_projectiles.erase(m_projectiles.begin() + i);
